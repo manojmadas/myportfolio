@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/a465e4b2b2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">My <span>Portfolio</span></h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">My Projects</a></li>
+                    <!-- <li><a href="#">Portfolio</a></li> -->
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Front-end Developer</p>
+                <h1>Hi, I am <span>Manoj Kumar</span> <br/> from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------about me------------------------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="manoj-photo.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>As a Frontend Developer, I possess a diverse skill set in creating engaging and responsive user interfaces. My expertise lies in HTML, CSS, JavaScript, Bootstrap, and React.js, enabling me to build dynamic and visually appealing web applications. With a keen eye for design and a focus on user experience, I excel at transforming concepts into interactive and intuitive interfaces. I am well-versed in the latest web development trends and best practices, ensuring that the applications I develop are not only visually stunning but also optimized for performance and accessibility. Whether working independently or collaboratively in a team, I am committed to delivering high-quality, pixel-perfect solutions that meet both client and end-user requirements.</p>                    
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br/>HTML,CSS,Bootstrap,JavaScript,ReactJS.</li>
+                            <li><span>Back-End</span><br/>Python</li>
+                            <li><span>Databases</span><br/>SQL</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Current</span><br/>UI/UX Design training at ET Institute.</li>
+                            <li><span>2019 - 2021</span><br/>Team lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span><br/>Internship at ekart ecommerce.</li>
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>The Adoni Arts and Science college - Adoni,AP</span><br/>Graduation - B.Com(Computer Application) - 2021.</li>
+                            <li><span>Sri Balaji Junior College - Adoni,AP</span><br/>Intermediate - CEC - 2018.</li>
+                            <li><span>CMV High School - Adoni,AP</span><br/>Secondary School Certificate - 2016.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------My Projects----------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-bowl-food"></i>
+                    <h2>Food Munch</h2>
+                    <p>Developed a responsive website for Food Store where users can see a list of food items, detailed information
+                        about a food item, offers.
+                    </p>
+                    <p>Designed page using following HTML structure elements like li, header, article, footer elements, and 
+                        different bootstrap components to show different sections in the website and different bootstrap classes for responsiveness through the mobile-first approach.
+                    </p>
+                    <p>Implemented product youtube videos by using bootstrap embed and model components</p>
+                    <p><b>Technologies used: HTML, CSS, Bootstrap </b></p>
+                    <a href="http://mmanojfoodmunch.ccbp.tech" target="_blank">Project link</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-list"></i>
+                    <h2>Todos Application</h2>
+                    <p>Developed persistent todo application with CRUD operations to the tracklist of tasks</p>
+                    <p>The displayed list of todos with HTML list elements, styled todo list using CSS, Bootstrap</p>
+                    <p>Implemented todo crud operations by using JavaScript event listeners and updated UI dynamically by 
+                        using JavaScript DOM operations.
+                    </p>
+                    <p>Used Arrays, Objects, and their methods during todo list CRUD Operations Persisted todo list state on 
+                        page reloads using local storage methods
+                    </p>
+                    <p><b>Technologies used: HTML, CSS, JS, Bootstrap.</b></p>
+                    <a href="http://mmanojtodolist.ccbp.tech" target="_blank">Project Link</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <h2>Wikipedia Search Application</h2>
+                    <p>Developed custom Wikipedia search application where users can search and view curated results and can see 
+                        detailed explanations in Wikipedia by clicking on the specific result</p>
+                    <p>The displayed list of search results with HTML list elements with hyperlink as URL, styled list using CSS, Bootstrap, and implemented responsiveness using Flex properties and CSS Box model.</p>
+                    <p>Fetched search results from a server asynchronously using fetch GET HTTP API call. When a user clicks on a particular result, opens the website in a new tab by using the target attribute of the anchor 
+                        tag in HTML.
+                    </p>
+                    <p><b>Technologies used: HTML, CSS, JS, Bootstrap.</b></p>
+                    <a href="http://mmanojwikipedia.ccbp.tech" target="_blank">Project Link</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-------------------------------My Projects----------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> manojmadas2000@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 7799687557</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/manojmadas?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="manoj-cv.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Manoj. Made by manoj</p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName("tab-links")
+        var tabContents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tabLink of tabLinks){
+                tabLink.classList.remove("active-link")
+            }
+            for(tabContent of tabContents){
+                tabContent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+
+    </script>
+</body>
+</html>
